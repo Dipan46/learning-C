@@ -1,5 +1,7 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
+#include <conio.h>
+
+void main()
 {
     int a;
 
@@ -8,5 +10,5 @@ int main(int argc, char const *argv[])
 
     printf("%d, %d, %d\n", a, ++a, a++);
 
-    return 0;
+    getch();
 }

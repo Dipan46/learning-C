@@ -6,7 +6,7 @@ int main()
 
     printf("enter a value= ");
     scanf("%d", &i);
-
+    // Multiplying previous 2 numbers to get nest number with while loop
     while (c < i)
     {
         c = a + b;

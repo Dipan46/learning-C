@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <math.h>
-
 int main()
 {
-    printf("%f", sin(45));
-
+    char a = 7;
+    a ^= 5;
+    printf("%d", printf("%d", a += 3));
     return 0;
 }
