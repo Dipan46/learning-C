@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int a, i;
+    int a;
     printf("Enter number obtained: ");
     scanf("%d", &a);
-    if (a >= 90 && a <= 100)
+    if (a >= 0 && a <= 100)
         switch (a / 10)
         {
         case 10:

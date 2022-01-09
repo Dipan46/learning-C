@@ -13,17 +13,17 @@ int main()
     {
     case '+':
         r = a + b;
-        printf("Sum is = %d", (int)r);
+        printf("Sum is = %.0f", r);
         break;
 
     case '-':
         r = a - b;
-        printf("Difference is = %d", (int)r);
+        printf("Difference is = %.0f", r);
         break;
 
     case '*':
         r = a * b;
-        printf("Product is = %d", (int)r);
+        printf("Product is = %.0f", r);
         break;
 
     case '/':
@@ -33,7 +33,7 @@ int main()
 
     case '%':
         r = (int)a % (int)b;
-        printf("Reminder is = %d", (int)r);
+        printf("Reminder is = %.0f", r);
         break;
     }
     return 0;
