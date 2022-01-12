@@ -11,9 +11,9 @@ int main()
     switch (b)
     {
     case 4:
-        for (i = 0; i < a; i++)
+        for (i = 0; i < a; i++) // Number of IP
         {
-            for (j = 0; j < 4; j++)
+            for (j = 0; j < 4; j++) // Block of digit
             {
                 ip4 = rand() % 255;
                 printf("%d", ip4);
@@ -24,16 +24,16 @@ int main()
         }
         break;
     case 6:
-        for (i = 0; i < a; i++)
+        for (i = 0; i < a; i++) // Number of IP
         {
-            for (j = 0; j < 8; j++)
+            for (j = 0; j < 8; j++) // number of block
             {
-                for (int k = 0; k < 4; k++)
+                for (int k = 0; k < 4; k++) // Loop to access the array
                 {
                     ip6 = str[rand() % 16];
                     printf("%c", ip6);
                 }
-                if (j < 7)
+                if (j < 7) // Dot after a block
                     printf(".");
             }
             printf("\n");
