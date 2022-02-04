@@ -50,8 +50,8 @@ int main()
         }
         else if (a >= 5)
         {
-            int fi = a / 5;
-            printf("Quantity of 5 note: %d\n", fi);
+            int fv = a / 5;
+            printf("Quantity of 5 note: %d\n", fv);
             a = a % 5;
         }
         else if (a >= 2)
