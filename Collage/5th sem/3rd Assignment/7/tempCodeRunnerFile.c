@@ -1,0 +1,1 @@
+    printf("Decimul form is: %d", d);
