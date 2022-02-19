@@ -57,14 +57,10 @@ int AND(int x, int y)
     {
         rem_x = x % 10;
         rem_y = y % 10;
-        if (rem_x == 0 && rem_y == 0)
-            i = 0;
-        else if (rem_x == 1 && rem_y == 0)
-            i = 0;
-        else if (rem_x == 0 && rem_y == 1)
-            i = 0;
-        else if (rem_x == 1 && rem_y == 1)
+        if (rem_x == 1 && rem_y == 1)
             i = 1;
+        else
+            i = 0;
         rem_x = x / 10;
         rem_y = y / 10;
         n = n + i;
@@ -101,14 +97,11 @@ int XOR(int x, int y)
     {
         rem_x = x % 10;
         rem_y = y % 10;
-        if (rem_x == 0 && rem_y == 0)
-            i = 0;
         else if (rem_x == 1 && rem_y == 0)
             i = 1;
         else if (rem_x == 0 && rem_y == 1)
-            i = 0;
-        else if (rem_x == 1 && rem_y == 1)
             i = 1;
+        else i = 0;
         rem_x = x / 10;
         rem_y = y / 10;
         n = n + i;
