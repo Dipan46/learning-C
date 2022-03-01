@@ -22,9 +22,6 @@ int prime(int n)
 {
     for (int j = 2; j <= (n / 2); j++)
         if (n % j == 0)
-        {
             return 1;
-            break;
-        }
     return 0;
 }
