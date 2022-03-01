@@ -4,8 +4,7 @@ int main()
 {
     char str1[20], str2[20];
     char *a, *b;
-    int i = 0, com = 0;
-    int c, d;
+    int com = 0;
 
     printf("Enter 1st string: ");
     gets(str1);
@@ -15,7 +14,7 @@ int main()
     a = str1;
     b = str2;
 
-    if (strlen(str1) != strlen(str2))
+    if (strlen(a) != strlen(b))
         printf("Strings are different");
     else
     {
