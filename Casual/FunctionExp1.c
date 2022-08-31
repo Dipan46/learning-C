@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int multiplication(int a, int b)
+int mlp(int a, int b)
 {
     return a * b;
 }
@@ -15,7 +15,7 @@ int main()
     printf("Enter the secend value: ");
     scanf("%d", &b);
 
-    c = multiplication(a, b);
+    c = mlp(a, b);
 
     printf("Ans: %d", c);
 
