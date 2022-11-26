@@ -5,41 +5,35 @@ struct Node
 {
     int data;
     struct Node *link;
-};
-
-struct Node *p, *n, *h, *x;
+} *first = NULL;
 
 void create(int a)
 {
+    struct Node *p, *last;
     p = (struct Node *)malloc(sizeof(struct Node));
     printf("Enter the value: ");
     scanf("%d", &p->data);
 
     p->link = NULL;
-    h = p;
+    first = p;
+
     for (int i = 0; i < a; i++)
     {
-        n = (struct Node *)malloc(sizeof(struct Node));
+        last = (struct Node *)malloc(sizeof(struct Node));
         printf("Enter the value: ");
-        scanf("%d", &n->data);
-        n->link = NULL;
-        p->link = n;
-        p = n;
+        scanf("%d", &last->data);
+        last->link = NULL;
+        p->link = last;
+        p = last;
     }
 }
 
-void display()
+void display(struct Node *f)
 {
-    if (h->link == NULL)
-        printf("\n------------\nData is: %d", h->data);
-    else
+    while (f->link != NULL)
     {
-        x = h;
-        do
-        {
-            printf("\n------------\nData is: %d", x->data);
-            x = x->link;
-        } while (x->link != NULL);
+        printf("\n------------\nData is: %d", f->data);
+        f = f->link;
     }
 }
 
@@ -50,7 +44,7 @@ int main()
     scanf("%d", &a);
 
     create(a);
-    display();
+    display(first);
 
     return 0;
 }
